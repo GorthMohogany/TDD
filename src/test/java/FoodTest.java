@@ -6,9 +6,11 @@ class FoodTest {
 
     @Test
     public void hasFoodType() {
-        Food food = new Food();
+        Food apple = new Food("fruit");
+        Food pizza = new Food("pizza");
 
-        assertEquals("fruit", food.getType());
+        assertEquals("fruit", apple.getType());
+        assertEquals("pizza", pizza.getType());
     }
 
 }
